@@ -1,0 +1,176 @@
+:root {
+    --dark-color1: #e29578;
+    --dark-color2: #f72585;
+    --dark-color3: #390099;
+
+    --light-color1: #e5e6e4;
+    --light-color2: #cfd2cd;
+    --light-color3: #83c5be;
+}
+
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--light-color1);
+}
+
+header {
+    display: grid;
+
+    align-items: center;
+
+
+}
+
+h1 {
+    color: #390099;
+    font-family: 'Oswald',
+        sans-serif;
+    margin: 3rem 0 0 5rem;
+
+
+}
+
+em {
+    color: #f72585;
+    padding-right: 5px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 3rem;
+}
+
+a,
+li {
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--dark-color3);
+}
+
+a:hover {
+    color: var(--dark-color2);
+}
+
+nav a:hover {
+    color: var(--dark-color2);
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+figcaption {
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color2);
+    background-color: var(--light-color3);
+    margin-top: 10px;
+}
+
+figcaption:hover {
+    transform: scale(1.1);
+}
+
+/* .women-category {
+    margin-top: 10rem;
+}
+
+.unisex-category {
+    margin-top: -5rem;
+} */
+
+/* list of products */
+.list-of-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    gap: 2rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+P {
+    margin-top: 0;
+    font-family: 'Oswald',
+        sans-serif;
+    font-weight: 600;
+}
+
+/* product page */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+h2 {
+    color: #390099;
+}
+
+.product-page {
+    background-color: white;
+    height: fit-content;
+    padding: 2rem;
+    /* width: 50%; */
+}
+
+.discount {
+    border-radius: 25px;
+    padding: 0.2rem;
+    margin: 0 2rem;
+    background-color: var(--dark-color2);
+    color: var(--dark-color3);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+button {
+    margin-top: 2rem;
+    background-color: var(--dark-color3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.3rem;
+    font-size: medium;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.onSale {
+    background-color: #f72585;
+    border-radius: 25px;
+    text-align: right;
+    padding: 0.3rem;
+}
+
+
+.soldOut {
+    opacity: 0.5;
+    border: #6d6c6c 5px solid;
+}
