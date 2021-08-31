@@ -76,7 +76,7 @@ nav a:hover {
 
 }
 
-figcaption {
+.main-container a {
     display: block;
     font-size: 2em;
     text-transform: uppercase;
@@ -86,7 +86,7 @@ figcaption {
     margin-top: 10px;
 }
 
-figcaption:hover {
+.main-container a:hover {
     transform: scale(1.1);
 }
 
