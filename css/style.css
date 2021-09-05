@@ -10,8 +10,6 @@
     --borRad: 25px;
 }
 
-
-
 body {
     width: 90%;
     margin: 0 auto;
@@ -20,19 +18,13 @@ body {
 
 header {
     display: grid;
-
     align-items: center;
-
-
 }
 
 h1 {
     color: var(--dark-color3);
-    font-family: 'Oswald',
-        sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 3rem 0 0 5rem;
-
-
 }
 
 em {
@@ -96,8 +88,6 @@ nav a:hover {
     padding-top: 2rem;
 }
 
-
-
 .main-container a:hover {
     transform: scale(1.1);
 }
@@ -113,13 +103,11 @@ nav a:hover {
 article {
     display: flex;
     flex-direction: column;
-
 }
 
 P {
     margin-top: 0;
-    font-family: 'Oswald',
-        sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
 
@@ -178,7 +166,6 @@ button {
     padding: 0.3rem;
 
 }
-
 
 .soldOut {
     display: none;

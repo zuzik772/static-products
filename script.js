@@ -18,10 +18,8 @@ function showProduct(product) {
     document.querySelector(".gender").textContent = product.gender;
     document.querySelector(".type").textContent = product.usagetype;
     document.querySelector(".brand").textContent = product.brandname;
-
     document.querySelector("img.product-image").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
     document.querySelector("img.product-image").alt = product.productdisplayname;
-
     document.querySelector(".price").textContent = `${product.price}DKK`;
     document.querySelector(".discount").textContent = `-${product.discount}%`;
     document.querySelector(".discounted").textContent = `Now: ${Math.ceil(product.price * (1 - product.discount / 100))} DKK`;

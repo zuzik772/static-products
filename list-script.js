@@ -52,20 +52,3 @@ function showProduct(product) {
     // append
     parent.appendChild(myCLone);
 }
-
-
-/*
-           <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                    alt="Sahara Team India Fanwear Round Neck Jersey" />
-                <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-                <p class="subtle">Tshirts | Nike</p>
-                <p class="price"><span>Prev.</span> DKK 1595,-</p>
-                <div class="discounted">
-                    <p>Now DKK 1560,-</p>
-                    <p>-34%</p>
-                </div>
-                <a href="product-page.html">Read More</a>
-            </article>
-
-*/

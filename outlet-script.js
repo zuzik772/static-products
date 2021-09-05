@@ -3,11 +3,6 @@
 const discount = urlParams.get("discount");
 const urlDiscount = "https://kea-alt-del.dk/t7/api/products/?discount";
 
-
-
-
-
-
 console.log(urlDiscount);
 fetch(urlDiscount)
     .then(function (response) {
@@ -24,11 +19,7 @@ function handleDiscountData(data) {
 };
 
 function updateDiscountHeader() {
-    // console.log(document.querySelector("h2.gender"));
     document.querySelector("h2.gender").textContent = "Outlet";
-    // console.log(document.querySelector("h2.gender"));
-    // console.log("outlet shows");
-    // document.querySelector("h2.gender").style.display = "none";
 }
 
 function showDiscountedProduct(product) {
@@ -47,32 +38,8 @@ function showDiscountedProduct(product) {
     myCLone.querySelector("div p").classList.add("onSale");
     myCLone.querySelector("div p").textContent = `-${product.discount}%`;
     myCLone.querySelector(".discounted").textContent = `Now: ${Math.ceil(product.price * (1 - product.discount / 100))} DKK`;
-    // if (product.soldout) {
-    //     myCLone.querySelector("article").classList.add("soldOut");
-    // }
-
-    //  else {
-    //     myCLone.querySelector("article").style.display = "none";
-    // }
     // grab parent
     const parent = document.querySelector("main");
     // append
     parent.appendChild(myCLone);
 }
-
-
-/*
-           <article class="smallProduct">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                    alt="Sahara Team India Fanwear Round Neck Jersey" />
-                <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-                <p class="subtle">Tshirts | Nike</p>
-                <p class="price"><span>Prev.</span> DKK 1595,-</p>
-                <div class="discounted">
-                    <p>Now DKK 1560,-</p>
-                    <p>-34%</p>
-                </div>
-                <a href="product-page.html">Read More</a>
-            </article>
-
-*/
